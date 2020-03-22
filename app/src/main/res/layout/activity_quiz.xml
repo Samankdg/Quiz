@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical" >
+
+    <!-- Question 1 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:text="1."
+        style="@style/questionStyle"/>
+    <TextView
+        style="@style/questionStyle"
+        android:text="Who gave Bhishma the boon that he would die only when he wished?"
+        />
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/num_one_radio_group"
+        style="@style/radioStyle">
+
+        <RadioButton
+            android:id="@+id/shantanu_radio"
+            android:text="Shantanu"
+            style="@style/checkboxStyle" />
+        <RadioButton
+            android:id="@+id/krishna_radio"
+            android:text="Krishna"
+            style="@style/checkboxStyle" />
+        <RadioButton
+            android:id="@+id/dhritarashtra_radio"
+            android:text="Dhritarashtra"
+            style="@style/checkboxStyle" />
+        <RadioButton
+
+            android:text="Ved Vyasa"
+            style="@style/checkboxStyle" />
+
+    </RadioGroup>
+
+    <!-- Question 2 -->
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="2. Who was the daughter of Dhritarashtra?" />
+
+    <RadioGroup
+        android:id="@+id/num_two_radio_group"
+        style="@style/radioStyle">
+
+        <RadioButton
+            android:text="Radha"
+            style="@style/checkboxStyle" />
+        <RadioButton
+            android:id="@+id/dushala_radio"
+            android:text="Dushala"
+            style="@style/checkboxStyle" />
+        <RadioButton
+            android:text="Ganga"
+            style="@style/checkboxStyle" />
+        <RadioButton
+            android:text="Kunti"
+            style="@style/checkboxStyle" />
+
+    </RadioGroup>
+
+    <!-- Question 3 -->
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="3. The great war lasted for?" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:hint="Please enter your answer"
+        android:inputType="text"
+        style="@style/radioStyle" />
+
+    <!-- Question 4 -->
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="4. Who was King Santunu's  wife?" />
+
+    <CheckBox
+        android:id="@+id/ganga_checkbox"
+        android:text="Ganga"
+        style="@style/checkboxStyle" />
+
+    <CheckBox
+        android:id="@+id/kunti_checkbox"
+        android:text="Kunti"
+        style="@style/checkboxStyle" />
+
+    <CheckBox
+        android:id="@+id/radha_checkbox"
+        android:text="Radha"
+        style="@style/checkboxStyle" />
+
+    <CheckBox
+        android:id="@+id/satyavati_checkbox"
+        android:text="Satyavati"
+        android:layout_marginBottom="16sp"
+        style="@style/checkboxStyle" />
+
+    <TextView
+        style="@style/questionStyle"
+        android:text="5. Who recited the Mahabharata?" />
+
+    <!-- Question 5 -->
+
+    <RadioGroup
+        android:id="@+id/num_five_radio_group"
+        style="@style/radioStyle">
+
+        <RadioButton
+            android:text="Shantanu"
+            style="@style/checkboxStyle" />
+        <RadioButton
+            android:text="Krishna"
+            style="@style/checkboxStyle" />
+        <RadioButton
+            android:text="Dhritarashtra"
+            style="@style/checkboxStyle" />
+        <RadioButton
+            android:id="@+id/ved_vyasa_radio"
+            android:text="Ved Vyasa"
+            style="@style/checkboxStyle" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:text="Submit"
+        style="@style/submitStyle" />
+
+</LinearLayout>
+
+</ScrollView>
